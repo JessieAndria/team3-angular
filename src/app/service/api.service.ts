@@ -48,14 +48,6 @@ export class ApiService {
       })
     };
     return await this.http.get<Product>(url, httpOptions).toPromise().catch(() => { return null as any});
-    /*this.http.get(url, httpOptions).subscribe(async data => {
-      console.log("Niditra");
-      this.product = data;
-      return await this.product;
-    });*/
-    return null;
-    // console.log("url de l'API: "+url);
-    // return await this.http.get<Product>(url).toPromise().catch(() => { return null as any});
   }
 
 }
